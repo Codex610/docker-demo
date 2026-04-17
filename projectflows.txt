@@ -1,0 +1,13 @@
+Install Docker Desktop
+Sign in to Dockerhub and Docker Desktop
+Docker Desktop:
+> Check Docker install: cli -> "docker"
+> Pull the hello-world image and run it 
+
+Assure that you're logged in: docker login
+Build docke image: docker build -t flask-app .
+Run the container: docker run -p 5000:5000 flask-app
+Tag your image: docker tag flask-app codex0308/flask-app:v1
+Push image to dockerhub: docker push codex0308/flask-app:v1
+Pull image from dockerhub: docker pull codex0308/flask-app:v1
+Run the Pulled image: docker run -p 5000:5000 codex0308/flask-app:v1
